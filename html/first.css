@@ -1,0 +1,128 @@
+body{
+    background-color: lightpink;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: blue;
+    margin-top:0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10;
+    padding-bottom: 40px;
+    padding-top:40px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: white;
+
+}
+#h1-div{
+    font-size: x-large;
+    color:rgb(132, 12, 245);
+    margin-top:0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: cornsilk;
+}
+#h1-div2{
+    font-size: x-large;
+    color: black;
+    margin-top:0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: cornflowerblue;
+}
+.h2-head{
+    font-size: 40px;
+    color: blue;
+    margin-top: 10;
+    margin-bottom:10;
+    padding-bottom:40px;
+    padding-top:40px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: rgb(184, 184, 184);
+}
+.h2-div{
+    font-size: x-large;
+    color:rgb(132, 12, 245);
+    margin-top:0;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: cornsilk;
+}
+#rounded{
+    width: 600px;
+    height: 500px;
+    border-radius: 8px;
+}
+#rounded2{
+    width: 600px;
+    height: 500px;
+    border-radius: 50%;
+}
+#border{
+    border: 1px solid blue;
+    background-color:blue;
+    padding: 5px;
+    border-radius: 4px;
+    width: 600px;
+    height: 500px;
+
+}
+#auto{
+    max-width: 50%;
+    height:auto;
+}
+#center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#all-img{
+    border: 1px solid blue;
+    background-color:blue;
+    padding: 5px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+figcaption{
+    color: black;
+}
+#first-link:link{
+    color:blue;
+
+}
+#first-link:visited{
+    color:green;
+}
+#two-link:link{
+    background-color: yellow;
+    color:green;
+}
+#two-link:visited{
+    background-color: green;
+    color:yellow;
+}
+#three-link:visited, #three-link:link{
+    background-color: lightpink;
+    color: black;
+    border:solid;
+    padding: 14px 25px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+}
+#three-link:hover, #three-link:active{
+    background-color:hotpink;
+}

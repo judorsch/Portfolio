@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Bart's Example
+        </title>
+        <link rel="stylesheet" href="bart.css">
+        <script>function addWin(){
+            let wins = document.querySelector("#ravens-wins").innerText;
+            wins = parseInt(wins, 10);
+            document.querySelector("#ravens-wins").innerText = wins + 1;
+        }
+        </script>
+        <script>
+            function updateWins(){
+                let winEntry = document.querySelector("#win-entry").value;
+                document.querySelector("#ravens-wins").innerText = winEntry;
+            }
+        </script>
+            
+    </head>
+    <body>
+        <h1>
+            Dr. Bart's Example from Class on 09/09/2021
+        </h1>
+        <div>
+            I am recreating Dr. Bart's example from class.  Not every element is the same, but I wanted to make sure I practiced using buttons and text entries.  I am also using CSS that I learned earlier in the week.
+        </div>
+        <div class = "container">
+            <div class = img>
+                <figure>
+                    <img id="ravens-image" src="../imgs/ravens.png" title = "Ravens Logo" alt = "Problem Loading Image">
+                    <figcaption>This image is from <a href = "https://en.wikipedia.org/wiki/Baltimore_Ravens">wikipedia.</a></figcaption>
+                </figure>
+            </div>
+            <div class = text>
+                <div id= "wins">
+                    Ravens Wins in 2021 Season: <span id = "ravens-wins">0</span>
+                </div>
+                <div>
+                    <button id = "button" onclick = "addWin()">Add Win</button>
+                </div>
+                <div>
+                    <input type = "number" id = "win-entry" placeholder = "Enter Desired Wins" onchange = "updateWins()">
+                </div>
+            </div>
+        </div>
+        <div>
+            Sources used:
+            <p>
+                <a href = "https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html">w3docs</a>
+            </p>
+            <p>
+                w3schools
+            </p>
+        </div>
+    </body>
+</html>

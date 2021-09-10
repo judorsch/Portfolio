@@ -1,0 +1,57 @@
+body{
+    background-color: midnightblue;
+}
+h1{
+    font-size: 75px;
+    color:whitesmoke;
+}
+#nav{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#nav2 {
+    
+    width: 100%;
+    list-style-type: none;
+    text-align:center;
+    margin: 0;
+    margin-left:0%;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+  }
+  
+  .bar {
+    display:inline-block;
+  }
+  
+  .bar2 {
+    display:block;
+    color: midnightblue;
+    padding: 14px 60px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .bar2:hover {
+    background-color: rgb(160, 158, 158);
+  }
+  .docText{
+      font-size:25px;
+      color:whitesmoke;
+  }
+  .links:link, .links:visited{
+      color:whitesmoke;
+      text-decoration:underline rgb(160, 158, 158);
+  }
+  .subheader{
+    font-size:50px;
+    color:whitesmoke;
+}
+#center{
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
