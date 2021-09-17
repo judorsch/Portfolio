@@ -18,6 +18,17 @@
             </ul>
         </div>
         <h2 class = "subheader">
+            Tic-Tac-Toe Progress Report: What is working and what is not!
+        </h2>
+        <div class="docText"> I started off by wanting to get the board set up, and have the basic functionality of when a space is selected, the indicator of who's turn is changed, as well as the space becomes either an X or O. This made me think to use buttons as spaces, and to style them so they just appear to be tiles.  I sucessfully set up the state for the indicator of who's turn it is.  The tricky part came when I was trying to get each button that when clicked, would change what was the indicator based off of what was present.  This turned out to be more difficult than the simple toggle feature that Dr. Bart demonstrated in class, as one button is not controlling the turn indicator, but many.  I tried a variation of things, including passing just a simple string like this:&ltTicButton change={setTurn} text2="Hi" >&lt/TicButton &gt, but this does not work (yes I did add a text:string to the end of the component definiton in the TicButton.tsx file).  I tried many variations of this, with the hopes of passing to it the current state, or string of the indicator.  That way my flip function:<br/> const flip = () =>  {<br/>
+            if(text2 === "Player O Turn"){ <br/>
+                change("Player X Turn")<br/>
+            }<br/>
+            else{<br/>
+              change("Player O Turn")<br/>
+            } <br/>
+        would flip the indicator based on text2.  I also tried to get the button's text element to change.  I tried using state with this.text, but that did not work.  I was able to change the text with the document.getElementById() function, but that changed the value on all of the buttons.  In an attempt to remedy this, I tried to assign an id to each of the different buttons, but this was also unsuccessful.  I also remember Dr. Bart saying that this is not a good course of action to do generally speaking, so I stopped.  At this point, I had spent a good amount of time on Thursday working on this project, so I decided to document what I tried.  I will get this working by the next milestone.  </div> 
+        <h2 class = "subheader">
             Change Log
             <div class="docText">
                 <ul>
@@ -40,7 +51,12 @@
                         </p>
                     </li>
                     <li>
-                        <p>09/16: I started to create a Tic-Tac-Toe game from scratch.  I am not using any references unless it is to look up a specific functionality.  I had the idea of using buttons as the spaces on the board, and to use those to change the notice of who's turn it is, as well as to change the text on the button, but was having much trouble.  I only started on Thursday after I did many tutorials earlier in the week, so I hope to have a functioning product soon.
+                        <p>09/16: I started to create a Tic-Tac-Toe game from scratch.  I am not using any references unless it is to look up a specific functionality.  I had the idea of using buttons as the spaces on the board, and to use those to change the notice of who's turn it is, as well as to change the text on the button, but was having much trouble.  I only started on Thursday after I did many tutorials earlier in the week, so I hope to have a functioning product soon.  The tutorials look much longer than expected, about 8-10 hours a piece.  The source code can be found <a class = "links" href="https://github.com/judorsch/tictactoe">here.</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I updated my website I have been using for my portfolio (the one you see right now).
                         </p>
                     </li>
                 </ul>
@@ -69,7 +85,7 @@
             </li>
             <li>
                 <p>
-                    I will explore formatting with Bootstrap and use this <a class= "links" href= "https://getbootstrap.com/docs/5.1/getting-started/introduction/">reference.</a>
+                    I will get a react app to successfully deploy.</a>
                 </p>
             </li>
         </ul>
