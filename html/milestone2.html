@@ -20,15 +20,31 @@
         <h2 class = "subheader">
             Tic-Tac-Toe Progress Report: What is working and what is not!
         </h2>
-        <div class="docText"> I started off by wanting to get the board set up, and have the basic functionality of when a space is selected, the indicator of who's turn is changed, as well as the space becomes either an X or O. This made me think to use buttons as spaces, and to style them so they just appear to be tiles.  I sucessfully set up the state for the indicator of who's turn it is.  The tricky part came when I was trying to get each button that when clicked, would change what was the indicator based off of what was present.  This turned out to be more difficult than the simple toggle feature that Dr. Bart demonstrated in class, as one button is not controlling the turn indicator, but many.  I tried a variation of things, including passing just a simple string like this:&ltTicButton change={setTurn} text2="Hi" >&lt/TicButton &gt, but this does not work (yes I did add a text:string to the end of the component definiton in the TicButton.tsx file).  I tried many variations of this, with the hopes of passing to it the current state, or string of the indicator.  That way my flip function:<br/> const flip = () =>  {<br/>
-            if(text2 === "Player O Turn"){ <br/>
-                change("Player X Turn")<br/>
-            }<br/>
-            else{<br/>
-              change("Player O Turn")<br/>
-            } <br/>
-        would flip the indicator based on text2.  I also tried to get the button's text element to change.  I tried using state with this.text, but that did not work.  I was able to change the text with the document.getElementById() function, but that changed the value on all of the buttons.  In an attempt to remedy this, I tried to assign an id to each of the different buttons, but this was also unsuccessful.  I also remember Dr. Bart saying that this is not a good course of action to do generally speaking, so I stopped.  At this point, I had spent a good amount of time on Thursday working on this project, so I decided to document what I tried.  I will get this working by the next milestone.  </div> 
-        <h2 class = "subheader">
+        <div class="docText"> I started off by wanting to get the board set up, and have the basic functionality
+            of when a space is selected, the indicator of who's turn is changed, as well as the space becomes 
+            either an X or O. This made me think to use buttons as spaces, and to style them so they just 
+            appear to be tiles.  I sucessfully set up the state for the indicator of who's turn it is.  The 
+            tricky part came when I was trying to get each button that when clicked, would change what was the 
+            indicator based off of what was present.  This turned out to be more difficult than the simple 
+            toggle feature that Dr. Bart demonstrated in class, as one button is not controlling the turn 
+            indicator, but many.  I tried a variation of things, including passing just a simple string like 
+            this:&ltTicButton change={setTurn} text2="Hi" >&lt/TicButton &gt, but this does not work (yes I 
+            did add a text:string to the end of the component definiton in the TicButton.tsx file).  I tried 
+            many variations of this, with the hopes of passing to it the current state, or string of the 
+            indicator.  That way my flip function:<br/> const flip = () =>  {<br/>
+           if(text2 === "Player O Turn"){ <br/>
+               change("Player X Turn")<br/>
+           }<br/>
+           else{<br/>
+             change("Player O Turn")<br/>
+           } <br/>
+       would flip the indicator based on text2.  I also tried to get the button's text element to change.  
+       I tried using state with this.text, but that did not work.  I was able to change the text with the 
+       document.getElementById() function, but that changed the value on all of the buttons.  In an attempt to 
+       remedy this, I tried to assign an id to each of the different buttons, but this was also unsuccessful. 
+        I also remember Dr. Bart saying that this is not a good course of action to do generally speaking, so I 
+        stopped.  At this point, I had spent a good amount of time on Thursday working on this project, so I 
+        decided to document what I tried.  I will get this working by the next milestone.  </div><h2 class = "subheader">
             Change Log
             <div class="docText">
                 <ul>
